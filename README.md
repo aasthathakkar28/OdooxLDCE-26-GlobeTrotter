@@ -6,7 +6,7 @@ Ekado Travel is a full-stack, responsive travel-planning application for creatin
 
 Add the final walkthrough link here before sharing the repository:
 
-**Video:** [Watch the Ekado Travel project walkthrough](PASTE_VIDEO_LINK_HERE)
+**Video:** 
 
 The recommended demo order is:
 
