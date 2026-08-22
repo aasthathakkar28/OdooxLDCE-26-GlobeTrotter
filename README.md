@@ -1,6 +1,23 @@
-# GlobeTrotter
+# Ekado Travel
 
-GlobeTrotter is a full-stack, responsive travel-planning application for creating multi-city trips, organizing itineraries, estimating costs, discovering destinations and activities, and sharing travel plans with a community.
+Ekado Travel is a full-stack, responsive travel-planning application for creating multi-city trips, organizing itineraries, estimating costs, discovering destinations and activities, and sharing travel plans with a community.
+
+## Project Demo Video
+
+Add the final walkthrough link here before sharing the repository:
+
+**Video:** [Watch the Ekado Travel project walkthrough](PASTE_VIDEO_LINK_HERE)
+
+The recommended demo order is:
+
+1. Sign in with the demo account.
+2. Show the dashboard, theme toggle, notifications, profile menu, and sample trips.
+3. Create a trip with a destination, dates, times, description, and optional cover.
+4. Add itinerary sections, activities, and estimated costs.
+5. Review the itinerary, budget, calendar, city/activity search, and shared view.
+6. Finish with the community, profile/settings, and admin/analytics screens.
+
+Use the video to explain which features are server-backed, which use local demo data, and which are visual placeholders. In particular, budget values are estimates only; the project does not process payments or store payment details.
 
 ## Project Statement
 
@@ -16,7 +33,7 @@ The product experience is designed around these principles:
 
 ## Payment Details
 
-GlobeTrotter currently supports **budget estimation only**. The budget page displays estimated costs for transport, accommodation, activities, and meals, along with totals and budget alerts.
+Ekado Travel currently supports **budget estimation only**. The budget page displays estimated costs for transport, accommodation, activities, and meals, along with totals and budget alerts.
 
 There is currently no payment gateway, checkout, booking transaction, card storage, bank integration, or financial data processing. No card numbers, CVVs, bank credentials, or payment tokens should be entered into this application. Any future payment integration must use a PCI-compliant provider and tokenized provider-hosted fields rather than storing payment details in the application database.
 
@@ -43,6 +60,7 @@ There is currently no payment gateway, checkout, booking transaction, card stora
 
 - **Client:** React, React Router, Vite, and Lucide icons.
 - **Server:** Node.js, Express, CORS, Morgan, and JWT middleware.
+- **Not a Next.js project:** this repository uses a Vite React client and an independent Express server, so there is no `app/page.tsx` or Next.js routing layer.
 - **Persistence:** a local JSON database at `server/data/db.json`. The database is created automatically when the server starts.
 - **Authentication:** passwords are hashed with bcrypt, and protected API routes require a Bearer JWT.
 - **State management:** page-level React state is used for filters, forms, theme selection, and interactive controls. Server-backed trip state is loaded through the client API service.
@@ -76,7 +94,7 @@ GET http://localhost:5000/api/health
 Expected response:
 
 ```json
-{"status":"ok","message":"GlobeTrotter API is running"}
+{"status":"ok","message":"Ekado Travel API is running"}
 ```
 
 ## Demo Account
@@ -110,6 +128,7 @@ Trip ownership is enforced on the server: users can only read or modify trips be
 ## Repository Structure
 
 ```text
+docs/                   Maintainer and architecture documentation
 client/                 React frontend and page UX
 client/src/pages/       Application screens
 client/src/components/  Shared layout and UI components
