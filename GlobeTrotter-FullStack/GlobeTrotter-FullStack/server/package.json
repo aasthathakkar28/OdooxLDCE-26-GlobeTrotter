@@ -1,0 +1,1 @@
+{"name":"globetrotter-server","type":"module","scripts":{"dev":"nodemon src/index.js","start":"node src/index.js"},"dependencies":{"bcryptjs":"latest","cors":"latest","dotenv":"latest","express":"latest","globetrotter-fullstack":"file:..","jsonwebtoken":"latest","morgan":"latest","uuid":"latest"},"devDependencies":{"nodemon":"latest"}}
