@@ -1,0 +1,5 @@
+import { Link } from "react-router-dom";
+import { Compass } from "lucide-react";
+export default function AuthLayout({ title, subtitle, children, footer }) {
+ return <div className="auth-page"><div className="auth-panel"><Link className="auth-brand" to="/login"><Compass size={25} className="brand-mark"/>Ekado Travel</Link><div className="auth-box"><h1>{title}</h1><p>{subtitle}</p>{children}<div className="auth-footer">{footer}</div></div><small className="auth-legal">© 2026 Ekado Travel · Travel with intention.</small></div><div className="auth-visual"><div className="visual-copy"><span className="visual-kicker">YOUR WORLD, WELL PLANNED</span><span className="visual-globe"><Compass size={42}/></span><h2>Make room for the places that matter.</h2><p>Build thoughtful itineraries, discover new cities, and carry every detail with you.</p><div className="visual-route"><span>NYC</span><i></i><span>PAR</span><i></i><span>TYO</span></div></div></div></div>;
+}
